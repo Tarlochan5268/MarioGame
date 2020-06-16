@@ -13,6 +13,15 @@
 		8417D753249827D100928B8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8417D751249827D100928B8B /* Main.storyboard */; };
 		8417D755249827D200928B8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8417D754249827D200928B8B /* Assets.xcassets */; };
 		8417D758249827D200928B8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8417D756249827D200928B8B /* LaunchScreen.storyboard */; };
+		8417D76724982EC800928B8B /* Myutils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8417D76624982EC800928B8B /* Myutils.swift */; };
+		8417D76924982EE300928B8B /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8417D76824982EE300928B8B /* GameOverScene.swift */; };
+		8417D76F2498330100928B8B /* Mario-coin-sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8417D76B2498330100928B8B /* Mario-coin-sound.mp3 */; };
+		8417D7702498330100928B8B /* jumpSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8417D76C2498330100928B8B /* jumpSound.wav */; };
+		8417D7712498330100928B8B /* loselifeSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8417D76D2498330100928B8B /* loselifeSound.wav */; };
+		8417D7722498330100928B8B /* BgSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8417D76E2498330100928B8B /* BgSound.wav */; };
+		8417D774249846A700928B8B /* GameScene2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8417D773249846A700928B8B /* GameScene2.swift */; };
+		8417D7772498F39600928B8B /* win.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8417D7752498F39600928B8B /* win.wav */; };
+		8417D7782498F39600928B8B /* lose.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8417D7762498F39600928B8B /* lose.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +33,15 @@
 		8417D754249827D200928B8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8417D757249827D200928B8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8417D759249827D200928B8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8417D76624982EC800928B8B /* Myutils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Myutils.swift; sourceTree = "<group>"; };
+		8417D76824982EE300928B8B /* GameOverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
+		8417D76B2498330100928B8B /* Mario-coin-sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mario-coin-sound.mp3"; sourceTree = "<group>"; };
+		8417D76C2498330100928B8B /* jumpSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = jumpSound.wav; sourceTree = "<group>"; };
+		8417D76D2498330100928B8B /* loselifeSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = loselifeSound.wav; sourceTree = "<group>"; };
+		8417D76E2498330100928B8B /* BgSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = BgSound.wav; sourceTree = "<group>"; };
+		8417D773249846A700928B8B /* GameScene2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene2.swift; sourceTree = "<group>"; };
+		8417D7752498F39600928B8B /* win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = win.wav; sourceTree = "<group>"; };
+		8417D7762498F39600928B8B /* lose.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lose.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +74,7 @@
 		8417D746249827D100928B8B /* MarioGame */ = {
 			isa = PBXGroup;
 			children = (
+				8417D76A2498330100928B8B /* Sounds */,
 				8417D747249827D100928B8B /* AppDelegate.swift */,
 				8417D74D249827D100928B8B /* GameScene.swift */,
 				8417D74F249827D100928B8B /* GameViewController.swift */,
@@ -63,8 +82,24 @@
 				8417D754249827D200928B8B /* Assets.xcassets */,
 				8417D756249827D200928B8B /* LaunchScreen.storyboard */,
 				8417D759249827D200928B8B /* Info.plist */,
+				8417D76624982EC800928B8B /* Myutils.swift */,
+				8417D76824982EE300928B8B /* GameOverScene.swift */,
+				8417D773249846A700928B8B /* GameScene2.swift */,
 			);
 			path = MarioGame;
+			sourceTree = "<group>";
+		};
+		8417D76A2498330100928B8B /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				8417D7762498F39600928B8B /* lose.wav */,
+				8417D7752498F39600928B8B /* win.wav */,
+				8417D76B2498330100928B8B /* Mario-coin-sound.mp3 */,
+				8417D76C2498330100928B8B /* jumpSound.wav */,
+				8417D76D2498330100928B8B /* loselifeSound.wav */,
+				8417D76E2498330100928B8B /* BgSound.wav */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +161,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8417D753249827D100928B8B /* Main.storyboard in Resources */,
+				8417D7772498F39600928B8B /* win.wav in Resources */,
 				8417D755249827D200928B8B /* Assets.xcassets in Resources */,
+				8417D76F2498330100928B8B /* Mario-coin-sound.mp3 in Resources */,
+				8417D7712498330100928B8B /* loselifeSound.wav in Resources */,
+				8417D7722498330100928B8B /* BgSound.wav in Resources */,
+				8417D7782498F39600928B8B /* lose.wav in Resources */,
+				8417D7702498330100928B8B /* jumpSound.wav in Resources */,
 				8417D758249827D200928B8B /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +179,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8417D76924982EE300928B8B /* GameOverScene.swift in Sources */,
 				8417D74E249827D100928B8B /* GameScene.swift in Sources */,
 				8417D750249827D100928B8B /* GameViewController.swift in Sources */,
+				8417D774249846A700928B8B /* GameScene2.swift in Sources */,
 				8417D748249827D100928B8B /* AppDelegate.swift in Sources */,
+				8417D76724982EC800928B8B /* Myutils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
